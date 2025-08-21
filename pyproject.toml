@@ -1,0 +1,9 @@
+[project]
+name = "offgridplanner-landing"
+version = "0.1.0"
+description = "Landing page for the Offgridplanner family"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.2",
+]
