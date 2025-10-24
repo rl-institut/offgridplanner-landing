@@ -199,6 +199,7 @@
 .region-card {
   gap: 1.5rem;
   padding: 2rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -268,7 +269,12 @@
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+.card__footer > .btn {
+  display: inline-block;
+  width: 75%;
+  height: 48px;
 }
 .footer-logo {
   display: inline-block;
