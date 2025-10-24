@@ -534,7 +534,7 @@ h3 {
 
 a {
     font-weight: 700;
-    color: #1F567D !important;
+    color: #1F567D;
     text-decoration: none !important;
     cursor: pointer;
 }
