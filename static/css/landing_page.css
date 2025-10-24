@@ -53,7 +53,7 @@
   padding-bottom: 4rem;
 }
 .cellular__image img {
-  max-width: calc(82rem / 2);
+  max-width: 33.33vw;
 }
 #text-content2 {
   background-color: var(--background2-color);
@@ -99,19 +99,19 @@
   .cellular__image img {
     max-width: 85%;
   }
-}
-.cellular__image {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  .cellular__image {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
 }
 @media (min-width: 1024px) {
   .cellular__image {
     padding-top: 4rem;
     padding-bottom: 6rem;
   }
-}
-.cellular__image img {
-  max-width: 12rem;
+  .cellular__image img {
+    max-width: 12rem;
+  }
 }
 @media (min-width: 768px) {
   .cellular__image img {
@@ -125,7 +125,7 @@
 }
 @media (min-width: 1200px) {
   .cellular__image img {
-    max-width: 26rem;
+    max-width: 33.33vw;
   }
 }
 
