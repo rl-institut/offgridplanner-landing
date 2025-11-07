@@ -18,18 +18,17 @@
 
 	<title>{% block title %} Offgridplanner {% endblock title %}</title>
 
-	{% block head_block %}
-        <link rel="stylesheet"
-            href="{{ url_for('static', filename='css/landing_page.css') }}"
-            type="text/css" />
-    {% endblock head_block %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	{% if DEBUG == True %}
 	{#% include "scss.html" %#}
 	{% else %}
 	<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css" />
 	{% endif %}
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    {% block head_block %}
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='css/landing_page.css') }}"
+            type="text/css" />
+    {% endblock head_block %}
 
 	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
 </head>
@@ -111,10 +110,9 @@
                                 Components
                             </p>
                             <div class="components-list">
-                                <img src="{{ url_for('static', filename='assets/icons/i_pv.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_battery.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_generator.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
-                                <span class="category-icon" title="Inverters">Inverters</span>
+                                <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
+                                <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
+                                <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
                             </div>
                         </div>
                     </div>
@@ -147,11 +145,10 @@
                                 Components
                             </p>
                             <div class="components-list">
-                                <img src="{{ url_for('static', filename='assets/icons/i_pv.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_battery.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_generator.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir.svg') }}" title"Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
-                                <span class="category-icon" title="Inverters">Inverters</span>
+                                <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
+                                <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
+                                <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
+                                <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir_full.svg') }}" title"Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
                             </div>
                         </div>
                     </div>
@@ -160,7 +157,7 @@
                         <a href="https://nigeria.offgridplanner.org" class="btn btn--medium">Offgridplanner Thailand</a>
                         <!--ToDo: needs the url and logo from project below-->
                         <a href="https://www.peoplesun.org/" class="footer-logo" title="Visit project partner" target="_blank" rel="noopener">
-                            <img src="{{ url_for('static', filename='assets/logos/PeopleSunLogo.png') }}" alt="Partner Logo">
+                            <img src="{{ url_for('static', filename='assets/logos/Green-H2Islands-Full-Logo.png') }}" alt="Partner Logo">
                         </a>
                     </div>
                 </div>
@@ -186,11 +183,10 @@
                                 Components
                             </p>
                             <div class="components-list">
-                                <img src="{{ url_for('static', filename='assets/icons/i_pv.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_battery.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_generator.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir.svg') }}" title"Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
-                                <span class="category-icon" title="Inverters">Inverters</span>
+                                <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
+                                <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
+                                <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
+                                <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir_full.svg') }}" title"Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
                             </div>
                         </div>
                     </div>
@@ -198,9 +194,7 @@
                         <!--ToDo: needs the url to offgridplanner mozambique website-->
                         <a href="https://nigeria.offgridplanner.org" class="btn btn--medium">Offgridplanner Mozambique</a>
                         <!--ToDo: needs the url and logo from project below-->
-                        <a href="https://www.peoplesun.org/" class="footer-logo" title="Visit project partner" target="_blank" rel="noopener">
-                            <img src="{{ url_for('static', filename='assets/logos/PeopleSunLogo.png') }}" alt="Partner Logo">
-                        </a>
+                        <a href="https://www.peoplesun.org/" class="footer-logo" title="Visit project partner" target="_blank" rel="noopener"></a>
                     </div>
                 </div>
             </div>
@@ -228,20 +222,7 @@
             <div class="newsletter__heading">
                 <h2>Are you interested to explore other regions?</h2>
             </div>
-            <span class="newsletter__text">We are happy to develop the tool further and adapt it to other regions, if you have the need for a specific country, or region, please reach out to us!</span>
-            <form class="newsletter__form" method="post" action="https://flow.cleverreach.com/fl/a176f5ea-761f-432f-8eec-b38a043ce09e/confirm">
-                <span class="newsletter__form--input">
-                    <input type="text" tabindex="-1" autocomplete="false" style="display:none !important;" class="cr-nope" name="email_confirm">
-                    <input class="newsletter__form--email" type="email" placeholder="name@email.com" name="email" required="" >
-                    <button type="submit">Register</button>
-                </span>
-                <span class="newsletter__form--privacy">
-                    <input type="checkbox" name="accept_privacy" required="" id="id_accept_privacy">
-                    <label for="id_accept_privacy">
-                        I have read and accept the <a target="_blank" href="{{ url_for('privacy') }}">privacy statement </a> from offgridplanner<span class="asteriskField">*</span>
-                    </label>
-                </span>
-            </form>
+            <span class="newsletter__text">We are happy to develop the tool further and adapt it to other regions, if you have the need for a specific country, or region, please reach out to us! <a href="mailto:offgridplanner@rl-institut.de" title="link to email to tha address offgridplanner@rl-institut.de">offgridplanner@rl-institut.de</a></span>
         </div>
     </section>
 
