@@ -18,21 +18,21 @@
   justify-content: center;
 }
 .cellular > div {
-  width: 100%;
-  max-width: 82rem;
+  width: 98%;
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   position: relative; /* needed for scroll indicator arrow */
 }
 .cellular__text {
   padding-top: 7rem;
-  padding-right: 4rem;
+  padding-right: 7rem;
   padding-bottom: 4rem;
   padding-left: 2rem;
-}
-.cellular__text h1 {
+  max-width: 48%;
+}cellular__text h1 {
   text-align: left;
   font-size: 4rem;
   color: var(--h1-color);
