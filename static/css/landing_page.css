@@ -1,7 +1,7 @@
 .landing-page-styles {
-    --h1-color: #343434;
+    --h1-color: #002E4F;
     --h2-color: #17405c;
-    --text-dark-color: #6e6e6e;
+    --text-dark-color: #002E4F;
     --text-light-color: #fff;
     --background1-color: #ffffff;
     --background2-color: #f3f7fc;
@@ -10,11 +10,28 @@
     --card-text-color: #17405c;
     --button-hover-color: #d2d7ea;
 }
+h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
 h2 {
   font-size: 1.953rem;
   font-weight: 700;
   color: var(--h2-color);
   margin-bottom: 4rem;
+}
+h3 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+li {
+  font-weight:  400;
+  color: var(--text-dark-color);
 }
 
 .cellular {
@@ -38,6 +55,7 @@ h2 {
   padding-bottom: 4rem;
   padding-left: 2rem;
   max-width: 48%;
+  color: var(--text-dark-color)
 }
 .cellular__text h1 {
   text-align: left;
@@ -51,7 +69,7 @@ h2 {
   display: block;
   text-align: left;
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-dark-color);
   margin-bottom: 2rem;
 }
