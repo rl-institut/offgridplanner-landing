@@ -59,11 +59,8 @@ li {
 }
 .cellular__text h1 {
   text-align: left;
-  font-size: 4rem;
-  color: var(--h1-color);
-  margin-bottom: 1rem;
-  font-weight: 700;
-  line-height: 110%;
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
 }
 .cellular__text span {
   display: block;
@@ -220,7 +217,7 @@ li {
   }
 }
 .region-card {
-  gap: 1.5rem;
+  gap: 1rem;
   padding: 2rem;
   flex: 1;
   display: flex;
@@ -243,6 +240,7 @@ li {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  padding-bottom: 2rem;
 }
 .card__header p {
   font-weight: 700;
@@ -364,6 +362,9 @@ ul.target-group-list li {
 }
 #who-it-for h2 {
   text-align: center;
+}
+#text-content1 .cellular__text#who-it-for {
+  padding-bottom: 6rem;
 }
 
 .cellular .text-grid {
