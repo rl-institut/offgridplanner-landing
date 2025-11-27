@@ -164,6 +164,14 @@
   border-right: 25px solid transparent;
   border-top: 25px solid var(--h2-color); /* Color of Arrow/Triangle */
 }
+.arrow-right {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
 
 .regions {
   padding-top: 6rem;
@@ -272,8 +280,10 @@
   flex-wrap: nowrap;
 }
 .card__footer > .btn {
-  display: inline-block;
-  width: 75%;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
   height: 48px;
 }
 
