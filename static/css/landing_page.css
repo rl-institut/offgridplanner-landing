@@ -273,6 +273,19 @@ ul.features-list li {
   margin-bottom: 0.8rem;
   line-height: 1;
 }
+ul.target-group-list {
+  list-style: none;
+  padding-left: 0;
+}
+ul.target-group-list li {
+  background-image: url("/static/assets/icons/people.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding-left: 26px; /* space for the icon */
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
 .components-list {
   display: flex;
   gap: 0.5rem;
