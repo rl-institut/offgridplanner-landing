@@ -6,7 +6,7 @@
     --background1-color: #ffffff;
     --background2-color: #f3f7fc;
     --background3-color: #1f567d;
-    --card-color: #e5edf5;
+    --card-color: #F4F7F9;
     --card-text-color: #17405c;
     --button-hover-color: #d2d7ea;
 }
@@ -79,9 +79,6 @@ li {
 }
 .cellular__image img {
   max-width: 33.33vw;
-}
-#text-content2 {
-  background-color: var(--background2-color);
 }
 
 @media (max-width: 1200px) {
@@ -203,7 +200,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: var(--background2-color);
+  background: linear-gradient(108.99deg, #EDF1F5 0%, #DDEAF6 100.89%);
   text-align: center;
 }
 .regions > div {
@@ -265,7 +262,6 @@ li {
   border-radius: 8px;
   padding: 1.5rem 1rem;
   text-align: left;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 .card__content > div {
   min-width: 10rem;
@@ -306,7 +302,7 @@ ul.target-group-list li {
 
 .components-list {
   display: flex;
-  gap: 0.5rem;
+  gap: 24px;
 }
 .category-icon {
   font-size: 1.1rem;
