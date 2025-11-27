@@ -10,6 +10,12 @@
     --card-text-color: #17405c;
     --button-hover-color: #d2d7ea;
 }
+h2 {
+  font-size: 1.953rem;
+  font-weight: 700;
+  color: var(--h2-color);
+  margin-bottom: 4rem;
+}
 
 .cellular {
   padding-top: 4.5rem;
@@ -187,12 +193,6 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.regions h2 {
-  font-size: 1.953rem;
-  font-weight: 700;
-  color: var(--h2-color);
-  margin-bottom: 4rem;
-}
 .region__cards {
   display: flex;
   gap: 2rem;
@@ -314,6 +314,7 @@ ul.target-group-list li {
 
 #text-content1 > div {
   flex-direction: column;
+  align-items: center;
 }
 #text-content1 .cellular__image {
   padding-top: 0.5rem;
@@ -331,6 +332,9 @@ ul.target-group-list li {
 }
 #text-content1 .cellular__text > div > span {
   margin-bottom: 0rem;
+}
+#who-it-for h2 {
+  text-align: center;
 }
 
 .cellular .text-grid {
