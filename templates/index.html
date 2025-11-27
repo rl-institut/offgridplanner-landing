@@ -204,13 +204,35 @@
 
     <section class="cellular section" id="text-content1" data-aos="fade-up">
 		<div>
-			<div class="cellular__text">
-				<h3>What Can Offgridplanner Do?</h3>
-				<span>Automatically identify buildings using OpenStreetMap data</span>
-                <span>Optimize the spatial layout of distribution grids</span>
-                <span>Design generation systems e.g. PV arrays, batteries, inverters, and diesel generators</span>
-                <span>Determine whether the most viable option for electrifying customers is via a mini-grid connection or a standalone solar home system</span>
-			</div>
+            <h3>What Can Offgridplanner Do?</h3>
+            <div class="text-grid">
+                <div class="cellular__text">	
+                    <span>Automatically identify buildings using OpenStreetMap data</span>
+                    <div class="cellular__image">
+                        <img src="{{ url_for('static', filename='assets/illustrations/identify_buildings.png') }}" alt="">
+                    </div>
+                </div>
+                <div class="cellular__text">
+                    <span>Optimize the spatial layout of distribution grids</span>
+                    <div class="cellular__image">
+                        <img src="{{ url_for('static', filename='assets/illustrations/optimize_spatial_layout.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text-grid">
+                <div class="cellular__text">
+                    <span>Design generation systems e.g. PV arrays, batteries, inverters, and diesel generators</span>
+                    <div class="cellular__image">
+                        <img src="{{ url_for('static', filename='assets/illustrations/generation_systems.png') }}" alt="">
+                    </div>
+                </div>
+                <div class="cellular__text">
+                    <span>Determine whether the most viable option for electrifying customers is via a mini-grid connection or a standalone solar home system</span>
+                    <div class="cellular__image">
+                        <img src="{{ url_for('static', filename='assets/illustrations/most_viable_option.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
             <div class="cellular__text">
 				<h3>Who Is It For?</h3>
 				<span>Offgridplanner is ideal for project developers, researchers, public institutions, and energy access practitioners working on off-grid electrification strategies.</span>
