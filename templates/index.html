@@ -43,7 +43,7 @@
 {% block start_body_scripts %}{% endblock %}
 
 {% block navbar %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar2 landing-page-styles">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url_for('home') }}">
                 <img src="{{ url_for('static', filename='assets/logos/Offgridplanner-Full-Logo.svg') }}" alt="Offgridplanner Logo">
@@ -55,11 +55,11 @@
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <!--ToDo: needs the correct url -->
-                        <a class="btn btn--small btn--secondary" href="{{ url_for('sponsoring') }}" >Sponsoring</a>
+                        <a class="btn btn--small btn-white" href="{{ url_for('sponsoring') }}" >Sponsoring</a>
                     </li>
                     <li class="nav-item">
                         <!--ToDo: needs the correct url -->
-                        <a class="btn btn--small btn--secondary" href="{{ url_for('docs') }}" >About us</a>
+                        <a class="btn btn--small btn-white" href="{{ url_for('docs') }}" >About us</a>
                     </li>
                 </ul>
             </div>

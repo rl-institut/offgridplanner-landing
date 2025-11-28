@@ -33,6 +33,18 @@ li {
   font-weight:  400;
   color: var(--text-dark-color);
 }
+a.btn.btn-white,
+a.btn.btn-white:active {
+  background: var(--background1-color);
+  color: var(--text-dark-color);
+  border-color: var(--button-hover-color);
+}
+a.btn.btn-white:hover {
+  background: var(--button-hover-color);
+  color: var(--text-dark-color);
+  border-color: var(--button-hover-color);
+}
+
 
 .cellular {
   padding-top: 4.5rem;
