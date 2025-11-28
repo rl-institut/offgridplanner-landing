@@ -1636,7 +1636,7 @@ nav.navbar {
 }
 
 nav.navbar.navbar-light {
-    background-color: var(--bcc) !important;
+    background-color: var(--bct) !important;
 }
 
 nav.navbar .navbar-brand img {

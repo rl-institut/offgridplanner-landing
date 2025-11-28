@@ -51,6 +51,7 @@ a.btn.btn-white:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: var(--background1-color);
 }
 .cellular > div {
   width: 98%;
