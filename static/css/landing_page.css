@@ -296,10 +296,6 @@ a.btn.btn-white:hover {
   text-align: left;
   flex: 2;
 }
-/* .card__content > div {
-  min-width: 10rem;
-  flex: 1;
-} */
 .list-title {
   font-weight: 700;
   font-size: 16px;
@@ -319,7 +315,7 @@ ul.features-list li {
   background-image: url("/static/assets/icons/checked.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
-  padding-left: 24px; /* space for the icon */
+  padding-left: 24px;
   margin-bottom: 0.8rem;
   line-height: 1;
 }
@@ -331,11 +327,10 @@ ul.target-group-list li {
   background-image: url("/static/assets/icons/people.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
-  padding-left: 26px; /* space for the icon */
+  padding-left: 26px;
   margin-bottom: 1rem;
   line-height: 1;
 }
-
 .components-list {
   display: flex;
   gap: 24px;
