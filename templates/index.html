@@ -43,7 +43,7 @@
 {% block start_body_scripts %}{% endblock %}
 
 {% block navbar %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar2 landing-page-styles">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url_for('home') }}">
                 <img src="{{ url_for('static', filename='assets/logos/Offgridplanner-Full-Logo.svg') }}" alt="Offgridplanner Logo">
@@ -55,11 +55,11 @@
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <!--ToDo: needs the correct url -->
-                        <a class="btn btn--small btn--secondary" href="{{ url_for('sponsoring') }}" >Sponsoring</a>
+                        <a class="btn btn--small btn-white" href="{{ url_for('sponsoring') }}" >Sponsoring</a>
                     </li>
                     <li class="nav-item">
                         <!--ToDo: needs the correct url -->
-                        <a class="btn btn--small btn--secondary" href="{{ url_for('docs') }}" >About us</a>
+                        <a class="btn btn--small btn-white" href="{{ url_for('docs') }}" >About us</a>
                     </li>
                 </ul>
             </div>
@@ -96,28 +96,24 @@
                         Nigeria
                         </p>
                     </div>
-                    <div class="card__content">
-                        <div class="card__list-column">
+                    <div class="card__content__feature">
                             <p class="list-title">
                                 Features
                             </p>
                             <ul class="features-list">
                                 <li title="Geospatial energy system optimization and design">Geospatial energy system optimization and design</li>
-                                <li title="solar home system option">solar home system option</li>
+                                <li title="Solar home system option">Solar home system option</li>
                             </ul>
-                        </div>
                     </div>
-                    <div class="card__content">
-                        <div class="card__list-column">
-                            <p class="list-title">
-                                Components
-                            </p>
-                            <div class="components-list">
-                                <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
-                            </div>
+                    <div class="card__content_components">
+                        <p class="list-title">
+                            Components
+                        </p>
+                        <div class="components-list">
+                            <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
                         </div>
                     </div>
                     <div class="card__footer">
@@ -134,29 +130,27 @@
                         Thailand
                         </p>
                     </div>
-                    <div class="card__content">
-                        <div class="card__list-column">
-                            <p class="list-title">
-                                Features
-                            </p>
-                            <ul class="features-list">
-                                <li title="Geospatial energy system optimization and design">Geospatial energy system optimization and design</li>
-                                <li title="solar home system option">solar home system option</li>
-                            </ul>
-                        </div>
+                    <div class="card__content__feature">
+                        <p class="list-title">
+                            Features
+                        </p>
+                        <ul class="features-list">
+                            <li title="Geospatial energy system optimization and design">Geospatial energy system optimization and design</li>
+                            <li title="Solar home system option">Solar home system option</li>
+                            <li title="Integration of hydrogen components">Integration of hydrogen components (electrolyzer, fuel cell and storage) as seasonal storage</li>
+                            <li title="Grid pole modifications">Grid pole modifications along roadways or infrastructure</li>
+                        </ul>
                     </div>
-                    <div class="card__content">
-                        <div class="card__list-column">
-                            <p class="list-title">
-                                Components
-                            </p>
-                            <div class="components-list">
-                                <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir.svg') }}" title"Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
-                            </div>
+                    <div class="card__content_components">
+                        <p class="list-title">
+                            Components
+                        </p>
+                        <div class="components-list">
+                            <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir.svg') }}" title"Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
                         </div>
                     </div>
                     <div class="card__footer">
@@ -175,29 +169,25 @@
                         Mozambique
                         </p>
                     </div>
-                    <div class="card__content">
-                        <div class="card__list-column">
-                            <p class="list-title">
-                                Features
-                            </p>
-                            <ul class="features-list">
-                                <li title="Geospatial energy system optimization and design">Geospatial energy system optimization and design</li>
-                                <li title="solar home system option">solar home system option</li>
-                            </ul>
-                        </div>
+                    <div class="card__content__feature">
+                        <p class="list-title">
+                            Features
+                        </p>
+                        <ul class="features-list">
+                            <li title="Geospatial energy system optimization and design">Geospatial energy system optimization and design</li>
+                            <li title="Solar home system option">Solar home system option</li>
+                        </ul>
                     </div>
-                    <div class="card__content">
-                        <div class="card__list-column">
-                            <p class="list-title">
-                                Components
-                            </p>
-                            <div class="components-list">
-                                <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir.svg') }}" title"Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
-                                <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
-                            </div>
+                    <div class="card__content_components">
+                        <p class="list-title">
+                            Components
+                        </p>
+                        <div class="components-list">
+                            <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir.svg') }}" title"Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
+                            <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
                         </div>
                     </div>
                     <div class="card__footer">
@@ -215,41 +205,41 @@
 		<div>
             <h2>What Can Offgridplanner Do?</h2>
             <div class="text-grid">
-                <div class="cellular__text">
+                <div class="grid__text">
                     <div>
                         <div class="circle-number">1</div>	
                         <span>Automatically identify buildings using OpenStreetMap data</span>
                     </div>
-                    <div class="cellular__image">
+                    <div class="grid__image">
                         <img src="{{ url_for('static', filename='assets/illustrations/identify_buildings.png') }}" alt="">
                     </div>
                 </div>
-                <div class="cellular__text">
+                <div class="grid__text">
                     <div>
-                        <div class="circle-number">1</div>	
+                        <div class="circle-number">2</div>	
                         <span>Optimize the spatial layout of distribution grids</span>
                     </div>
-                    <div class="cellular__image">
+                    <div class="grid__image">
                         <img src="{{ url_for('static', filename='assets/illustrations/optimize_spatial_layout.png') }}" alt="">
                     </div>
                 </div>
             </div>
             <div class="text-grid">
-                <div class="cellular__text">
+                <div class="grid__text">
                     <div>
-                        <div class="circle-number">1</div>	
+                        <div class="circle-number">3</div>	
                         <span>Design generation systems e.g. PV arrays, batteries, inverters, and diesel generators</span>
                     </div>
-                    <div class="cellular__image">
+                    <div class="grid__image">
                         <img src="{{ url_for('static', filename='assets/illustrations/generation_systems.png') }}" alt="">
                     </div>
                 </div>
-                <div class="cellular__text">
+                <div class="grid__text">
                     <div>
-                        <div class="circle-number">1</div>	
+                        <div class="circle-number">4</div>	
                         <span>Determine whether the most viable option for electrifying customers is via a mini-grid connection or a standalone solar home system</span>
                     </div>
-                    <div class="cellular__image">
+                    <div class="grid__image">
                         <img src="{{ url_for('static', filename='assets/illustrations/most_viable_option.png') }}" alt="">
                     </div>
                 </div>

@@ -33,12 +33,25 @@ li {
   font-weight:  400;
   color: var(--text-dark-color);
 }
+a.btn.btn-white,
+a.btn.btn-white:active {
+  background: var(--background1-color);
+  color: var(--text-dark-color);
+  border-color: var(--button-hover-color);
+}
+a.btn.btn-white:hover {
+  background: var(--button-hover-color);
+  color: var(--text-dark-color);
+  border-color: var(--button-hover-color);
+}
+
 
 .cellular {
   padding-top: 4.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: var(--background1-color);
 }
 .cellular > div {
   width: 98%;
@@ -71,8 +84,10 @@ li {
   margin-bottom: 2rem;
 }
 .cellular__image {
-  padding-top: 7rem;
-  padding-bottom: 4rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cellular__image img {
   max-width: 33.33vw;
@@ -125,8 +140,10 @@ li {
 }
 @media (min-width: 1024px) {
   .cellular__image {
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .cellular__image img {
     max-width: 12rem;
@@ -222,7 +239,7 @@ li {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  
   position: relative;
   border-radius: 1rem;
   background: var(--background1-color);
@@ -240,7 +257,8 @@ li {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  flex: 2;
 }
 .card__header p {
   font-weight: 700;
@@ -260,7 +278,16 @@ li {
   margin-top: -0.5rem;
   margin-bottom: 0.5rem;
 }
-.card__content {
+.card__content__feature {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  text-align: left;
+  flex: 6;
+}
+.card__content_components {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -268,10 +295,7 @@ li {
   border-radius: 8px;
   padding: 1.5rem 1rem;
   text-align: left;
-}
-.card__content > div {
-  min-width: 10rem;
-  flex: 1;
+  flex: 2;
 }
 .list-title {
   font-weight: 700;
@@ -292,7 +316,7 @@ ul.features-list li {
   background-image: url("/static/assets/icons/checked.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
-  padding-left: 24px; /* space for the icon */
+  padding-left: 24px;
   margin-bottom: 0.8rem;
   line-height: 1;
 }
@@ -304,11 +328,10 @@ ul.target-group-list li {
   background-image: url("/static/assets/icons/people.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
-  padding-left: 26px; /* space for the icon */
+  padding-left: 26px;
   margin-bottom: 1rem;
   line-height: 1;
 }
-
 .components-list {
   display: flex;
   gap: 24px;
@@ -326,6 +349,7 @@ ul.target-group-list li {
   gap: 1rem;
   margin-top: 2rem;
   flex-wrap: nowrap;
+  flex: 1;
 }
 .card__footer > .btn {
   display: inline-flex;
@@ -343,33 +367,41 @@ ul.target-group-list li {
   flex-direction: column;
   align-items: center;
 }
-#text-content1 .cellular__image {
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
+#text-content1 .text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  width: 100%;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
-#text-content1 .cellular__text {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-#text-content1 .cellular__text > div {
+#text-content1 .grid__text {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+#text-content1 .grid__image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#text-content1 .grid__text > div {
+  display: flex;
+  align-items: flex-start;
   flex-direction: row;
   margin-bottom: 1rem;
 }
-#text-content1 .cellular__text > div > span {
+#text-content1 .grid__text > div > span {
   margin-bottom: 0rem;
-}
+} 
 #who-it-for h2 {
   text-align: center;
 }
 #text-content1 .cellular__text#who-it-for {
+  padding-top: 3rem;
   padding-bottom: 6rem;
-}
-
-.cellular .text-grid {
-  display: flex;
-  flex-direction: row;
 }
 
 .circle-number {
@@ -383,8 +415,10 @@ ul.target-group-list li {
   background: #E8F1FA;
   border: none;
   color: #1B4A6B;
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
   margin-right: 0.75rem;
 }
 
