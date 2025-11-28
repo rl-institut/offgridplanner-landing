@@ -71,8 +71,10 @@ li {
   margin-bottom: 2rem;
 }
 .cellular__image {
-  padding-top: 7rem;
-  padding-bottom: 4rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cellular__image img {
   max-width: 33.33vw;
@@ -125,8 +127,10 @@ li {
 }
 @media (min-width: 1024px) {
   .cellular__image {
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .cellular__image img {
     max-width: 12rem;
