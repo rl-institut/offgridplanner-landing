@@ -238,7 +238,7 @@ a.btn.btn-white:hover {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  
   position: relative;
   border-radius: 1rem;
   background: var(--background1-color);
@@ -256,7 +256,8 @@ a.btn.btn-white:hover {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  flex: 2;
 }
 .card__header p {
   font-weight: 700;
@@ -276,7 +277,16 @@ a.btn.btn-white:hover {
   margin-top: -0.5rem;
   margin-bottom: 0.5rem;
 }
-.card__content {
+.card__content__feature {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  text-align: left;
+  flex: 6;
+}
+.card__content_components {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -284,11 +294,12 @@ a.btn.btn-white:hover {
   border-radius: 8px;
   padding: 1.5rem 1rem;
   text-align: left;
+  flex: 2;
 }
-.card__content > div {
+/* .card__content > div {
   min-width: 10rem;
   flex: 1;
-}
+} */
 .list-title {
   font-weight: 700;
   font-size: 16px;
@@ -342,6 +353,7 @@ ul.target-group-list li {
   gap: 1rem;
   margin-top: 2rem;
   flex-wrap: nowrap;
+  flex: 1;
 }
 .card__footer > .btn {
   display: inline-flex;
