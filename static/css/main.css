@@ -1107,35 +1107,6 @@ a.dropdown-item:active {
     background-color: #E3EAEE;
 }
 
-.components h1 {
-    text-align: center;
-}
-
-.components h2 {
-    padding-top: 3rem;
-    padding-left: 1rem;
-}
-
-.components__description {
-    max-width: 60rem;
-}
-
-.components__description li {
-    padding-left: 1rem;
-}
-
-.components .component {
-    padding-bottom: 2rem;
-}
-
-.components .component__title {
-    padding: 1rem;
-}
-
-.components nav.navbar {
-    position: relative;
-}
-
 .footer {
     background-color: #F4F7F9;
     height: 4.5rem;
@@ -2404,99 +2375,6 @@ content: "7"; }
 
 .import-file {
     padding-top: .85rem;
-}
-
-.components-block--design {
-    fill: #e9ecef;
-    stroke: black;
-    stroke-width: 2;
-}
-
-.components-block--dispatch {
-    fill: #ffffffcd;
-    stroke: #6c757d;
-    stroke-width: 2;
-}
-
-.components-block--demand {
-    fill: #e0fdef;
-    stroke: #198754;
-    stroke-width: 2;
-}
-
-.components-block--constraints {
-    fill: #fcdbdf;
-    stroke: #dc3545;
-    stroke-width: 2;
-}
-
-.components-text--design {
-    font-size: 1.10rem;
-    font-weight: 600;
-    fill: black;
-}
-
-.components-text--dispatch {
-    font-size: 1.10rem;
-    font-weight: 600;
-    fill: #6c757d;
-}
-
-.components-information--design {
-    font-size: 0.9rem;
-    font-weight: 600;
-    font-style: italic;
-    fill: black;
-}
-
-.components-information--dispatch {
-    font-size: 0.9rem;
-    font-weight: 600;
-    font-style: italic;
-    fill: #6c757d;
-}
-
-.components-information--constraints {
-    font-size: 0.9rem;
-    font-weight: 600;
-    font-style: italic;
-    fill: #dc3545;
-}
-
-.components-text--demand {
-    font-size: 1.10rem;
-    font-weight: 600;
-    fill: #198754;
-}
-
-.components-text--constraints {
-    font-size: 1.10rem;
-    font-weight: 600;
-    fill: #dc3545;
-}
-
-.components-flow--design {
-    stroke: black;
-    stroke-width: 3;
-    fill: none;
-}
-
-.components-flow--dispatch {
-    stroke: #6c757d;
-    stroke-width: 3;
-    fill: none;
-}
-
-.components-flow--demand {
-    stroke: #198754;
-    stroke-width: 3;
-    fill: none;
-}
-
-.components-flow--constraints {
-    stroke: #dc3545;
-    stroke-width: 3;
-    fill: none;
 }
 
 .form-switch .form-check-input {
