@@ -383,9 +383,13 @@ ul.target-group-list li {
   text-align: left;
 }
 #text-content1 .grid__image {
-  display: flex;
   justify-content: center;
   width: 100%;
+}
+#text-content1 .grid__image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
 }
 #text-content1 .grid__text > div {
   display: flex;
