@@ -370,8 +370,8 @@ ul.target-group-list li {
 #text-content1 .text-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  width: 100%;
+  gap: 1rem;
+  width: 80%;
   align-items: start;
   justify-content: center;
   margin-bottom: 2rem;
@@ -381,6 +381,7 @@ ul.target-group-list li {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  max-width: 100%;
 }
 #text-content1 .grid__image {
   justify-content: flex-start;
@@ -388,21 +389,19 @@ ul.target-group-list li {
 }
 #text-content1 .grid__image img {
   width: 100%;
-  max-width: 480px;
   height: auto;
 }
 #text-content1 .grid__text > div {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
-  margin-bottom: 1rem;
+  min-height: 80px;
+  max-width: 540px;
 }
 #text-content1 .grid__text > div > span {
   margin-bottom: 0rem;
   font-size: 1.15rem;
   line-height: 1.4;
-  display: flex;
-  align-self: center;
 } 
 #who-it-for h2 {
   text-align: center;
