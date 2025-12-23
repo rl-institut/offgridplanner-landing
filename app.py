@@ -6,9 +6,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/docs")
-def docs():
-    return render_template("docs.html")
+@app.route("/about_us")
+def about_us():
+    return render_template("about_us.html")
 
 @app.route("/license")
 def license():
