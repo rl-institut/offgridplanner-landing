@@ -383,7 +383,7 @@ ul.target-group-list li {
   text-align: left;
 }
 #text-content1 .grid__image {
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
 }
 #text-content1 .grid__image img {
@@ -399,7 +399,7 @@ ul.target-group-list li {
 }
 #text-content1 .grid__text > div > span {
   margin-bottom: 0rem;
-  font-size: 1.15rem;   /* slightly bigger */
+  font-size: 1.15rem;
   line-height: 1.4;
   display: flex;
   align-self: center;
