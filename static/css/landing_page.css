@@ -410,6 +410,9 @@ ul.target-group-list li {
   padding-top: 3rem;
   padding-bottom: 6rem;
 }
+#who-it-for .target-group-list > li {
+  font-size: 1.15rem;
+}
 
 .circle-number {
   flex-shrink: 0;
