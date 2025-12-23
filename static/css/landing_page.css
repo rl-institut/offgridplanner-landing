@@ -399,6 +399,10 @@ ul.target-group-list li {
 }
 #text-content1 .grid__text > div > span {
   margin-bottom: 0rem;
+  font-size: 1.15rem;   /* slightly bigger */
+  line-height: 1.4;
+  display: flex;
+  align-self: center;
 } 
 #who-it-for h2 {
   text-align: center;
