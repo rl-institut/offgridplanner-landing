@@ -2,9 +2,16 @@
 {% block title %}About us{% endblock %}
 {% block index %}
 {% endblock index %}
+
+{% block start_body_scripts %}
+    <link rel="stylesheet"
+            href="{{ url_for('static', filename='css/about_us.css') }}"
+            type="text/css" />
+{% endblock %}
+
 {% block content %}
 <main class="landing-page-styles">
-    <section class="cellular section" id="about_us">
+    <section class="cellular section central" id="about_us">
         <div>
             <div class="cellular__text">
                 <h2>Offgridplanner's exciting journey across two continents...</h2>
@@ -17,7 +24,7 @@
             </div>
         </div>
     </section>
-    <section class="cellular section" id="about_nigeria">
+    <section class="cellular section central" id="about_nigeria">
         <div>
             <div class="cellular__text">
                 <h2>About Offgridplanner Nigeria</h2>
@@ -29,7 +36,7 @@
             </div>
         </div>
     </section>
-    <section class="cellular section" id="about_thailand">
+    <section class="cellular section central" id="about_thailand">
         <div>
             <div class="cellular__text">
                 <h2>About Offgridplanner Thailand</h2>
