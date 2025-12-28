@@ -1527,27 +1527,6 @@ nav.navbar .dropdown-menu li {
     margin-bottom: 1rem;
 }
 
-#leafletMap {
-    height: 100%;
-    width: 100%;
-}
-
-.leaflet-touch {
-    width: 100%;
-}
-
-.leaflet-touch :hover {
-    font-weight: bold;
-}
-
-.leaflet-zoom-in-out {
-    width: 40%;
-}
-
-.leaflet-zoom-fit {
-    width: 70%;
-}
-
 .btn-group .btn {
     padding: 0.2rem;
 }
@@ -1578,10 +1557,6 @@ nav.navbar .dropdown-menu li {
         opacity: 1;
         transform: scale(1);
     }
-}
-
-.leaflet-control:hover {
-    font-weight: normal !important;
 }
 
 .loader,
