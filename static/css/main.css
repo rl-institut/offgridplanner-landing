@@ -1367,68 +1367,6 @@ nav.navbar .dropdown-menu li {
     padding-top: 0;
 }
 
-.standard-layout {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.standard-layout > div {
-    width: 100%;
-    max-width: 82rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.standard-layout h2 {
-    font-size: 1.563rem;
-}
-
-.standard-layout h3 {
-    font-size: 1.25rem;
-}
-
-.standard-layout .account {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.standard-layout .account > div {
-    max-width: 28rem;
-    width: 100%;
-}
-
-.standard-layout .account__save {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-
 .modal.modal--gui .modal-dialog {
     min-width: 1000px;
 }
