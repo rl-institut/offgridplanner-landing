@@ -1527,62 +1527,6 @@ nav.navbar .dropdown-menu li {
     margin-bottom: 1rem;
 }
 
-.hero {
-    padding-top: 4.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.hero > div {
-    width: 100%;
-    max-width: 82rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-
-.hero__text {
-    padding-top: 7rem;
-    padding-right: 12rem;
-}
-
-.hero__text h1 {
-    text-align: left;
-    font-size: 2.5rem;
-    color: #343434;
-    margin-bottom: 1rem;
-}
-
-.hero__text span {
-    display: block;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-}
-
-.hero__image {
-    padding-top: 4rem;
-}
-
-.hero__image img {
-    max-width: calc(82rem / 2);
-}
-
 #leafletMap {
     height: 100%;
     width: 100%;
