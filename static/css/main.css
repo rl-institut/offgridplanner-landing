@@ -48,6 +48,9 @@
     font-style: normal;
 }
 
+/* Icons
+   ========================================================================== */
+
 @font-face {
     font-family: 'icomoon';
     src: url("/static/fonts/icomoon.eot?xke5es");
@@ -142,6 +145,25 @@
 
 .icon-more:before {
     content: "\e910";
+}
+
+.icon--small {
+    font-size: .6rem;
+}
+
+.icon[data-bs-toggle="tooltip"] {
+    cursor: pointer;
+    padding-left: 0.35rem;
+    vertical-align: middle;
+    color: #1F567D;
+}
+
+.actions .btn--action .icon:not(.icon-results)::before {
+    color: #343434;
+}
+
+.actions .btn--action:hover .icon:not(.icon-results)::before {
+    color: #8c8c8c;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -511,10 +533,77 @@ template {
     display: none;
 }
 
+/* Stylings for all pages
+   ========================================================================== */
+.main--padding-top {
+    padding-top: 7rem;
+}
+
+.main--padding-top .header .header__title {
+    padding-top: 0;
+}
+
+.header {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.header > div {
+    padding-top: 7rem;
+    width: 100%;
+    max-width: 82rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__left,
+.header__back {
+    width: 10rem;
+}
+
+.header__title {
+    font-size: 1.563rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.header__back {
+    text-align: right;
+}
+
+.header__back a {
+    position: relative;
+    font-size: 0.875rem;
+    vertical-align: middle;
+}
+
 body {
     font-family: lato, Arial, Helvetica, sans-serif !important;
     color: #343434;
     letter-spacing: 0.01rem;
+    text-align: justify;
 }
 
 p {
@@ -526,6 +615,79 @@ h2,
 h3 {
     letter-spacing: 0.03rem;
 }
+
+div.disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
+.footer {
+    background-color: #F4F7F9;
+    height: 4.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.footer > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 82rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer__logo img {
+    height: 2rem;
+}
+
+.footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.footer__links ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.footer__links li {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+/* Links & Buttons
+   ========================================================================== */
 
 a {
     font-weight: 700;
@@ -540,52 +702,9 @@ a:hover,
     color: #000;
 }
 
-.dropdown-item {
-    font-size: 1rem;
-    font-weight: 400 !important;
-}
-
-.dropdown-item:hover {
-    color: #8c8c8c !important;
-    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
 footer a {
     font-size: 1rem;
     font-weight: 400 !important;
-}
-
-footer a:hover {
-    color: #8c8c8c !important;
-    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-.nav-link {
-    font-size: 1rem;
-    font-weight: 400 !important;
-}
-
-.nav-link:hover {
-    color: #8c8c8c !important;
-    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-.dropdown-item {
-    color: #343434 !important;
-}
-
-footer a {
-    color: #343434 !important;
-}
-
-.nav-link {
-    color: #343434 !important;
-}
-
-.dropdown-item:link {
     color: #343434 !important;
 }
 
@@ -593,43 +712,17 @@ footer a:link {
     color: #343434 !important;
 }
 
-.nav-link:link {
-    color: #343434 !important;
-}
-
-.dropdown-item:hover {
-    color: #343434 !important;
-}
-
 footer a:hover {
     color: #343434 !important;
-}
-
-.nav-link:hover {
-    color: #343434 !important;
-}
-
-.dropdown-item:active {
-    color: #343434 !important;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 footer a:active {
     color: #343434 !important;
 }
 
-.nav-link:active {
-    color: #343434 !important;
-}
-
-.dropdown-item:visited {
-    color: #343434 !important;
-}
-
 footer a:visited {
-    color: #343434 !important;
-}
-
-.nav-link:visited {
     color: #343434 !important;
 }
 
@@ -1092,6 +1185,85 @@ footer button.btn.hidden {
     visibility: hidden;
 }
 
+/* Set a style for all buttons */
+button {
+    background-color: #ebebeb;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    letter-spacing: 0.03rem;
+    font-weight: 700;
+    padding: 0.25rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.grey_button {
+    background-color: #ebebeb;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    letter-spacing: 0.03rem;
+    font-weight: 700;
+    padding: 0.25rem;
+}
+
+/* Navbar
+   ========================================================================== */
+
+   .nav-link {
+    font-size: 1rem;
+    font-weight: 400 !important;
+    color: #343434 !important;
+}
+
+.nav-link:link {
+    color: #343434 !important;
+}
+
+.nav-link:hover {
+    color: #343434 !important;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:active {
+    color: #343434 !important;
+}
+
+.nav-link:visited {
+    color: #343434 !important;
+}
+
+.dropdown-item {
+    color: #343434 !important;
+}
+
+.dropdown-item {
+    font-size: 1rem;
+    font-weight: 400 !important;
+}
+
+.dropdown-item:hover {
+    color: #343434 !important;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.dropdown-item:link {
+    color: #343434 !important;
+}
+
+.dropdown-item:active {
+    color: #343434 !important;
+}
+
+.dropdown-item:visited {
+    color: #343434 !important;
+}
+
 ul.dropdown-menu {
     -webkit-box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
     box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
@@ -1102,163 +1274,8 @@ a.dropdown-item:active {
     background-color: #E3EAEE;
 }
 
-.footer {
-    background-color: #F4F7F9;
-    height: 4.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-}
-
-.footer > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 82rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.footer__logo img {
-    height: 2rem;
-}
-
-.footer__links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.footer__links ul {
-    list-style: none;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.footer__links li {
-    display: inline-block;
-    padding-left: 1rem;
-}
-
-div.disabled {
-    color: #ccc;
-    pointer-events: none;
-}
-
-.header {
-    background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-}
-
-.header > div {
-    padding-top: 7rem;
-    width: 100%;
-    max-width: 82rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    position: relative;
-}
-
-.header__left,
-.header__back {
-    width: 10rem;
-}
-
-.header__title {
-    font-size: 1.563rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 0;
-}
-
-.header__back {
-    text-align: right;
-}
-
-.header__back a {
-    position: relative;
-    font-size: 0.875rem;
-    vertical-align: middle;
-}
-
-.icon--small {
-    font-size: .6rem;
-}
-
-.icon[data-bs-toggle="tooltip"] {
-    cursor: pointer;
-    padding-left: 0.35rem;
-    vertical-align: middle;
-    color: #1F567D;
-}
-
-.actions .btn--action .icon:not(.icon-results)::before {
-    color: #343434;
-}
-
-.actions .btn--action:hover .icon:not(.icon-results)::before {
-    color: #8c8c8c;
-}
-
 .tooltip-inner {
     max-width: 350px !important;
-}
-
-.modal .modal-header {
-    background-color: #F4F7F9;
-    border-bottom: none;
-    padding: 1rem 3rem 1rem;
-}
-
-.modal .modal-body {
-    padding: 3rem;
 }
 
 nav.navbar {
@@ -1359,12 +1376,79 @@ nav.navbar .dropdown-menu li {
 
 }
 
-.main--padding-top {
-    padding-top: 7rem;
+/* Modal
+   ========================================================================== */
+/* Add padding and center-align text to the container */
+.container {
+    padding: 16px;
+    text-align: center;
 }
 
-.main--padding-top .header .header__title {
-    padding-top: 0;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: var(--bct);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 0px solid #fff;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #1F567D;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+        width: 100%;
+    }
+}
+
+.modal .modal-header {
+    background-color: #F4F7F9;
+    border-bottom: none;
+    padding: 1rem 3rem 1rem;
+}
+
+.modal .modal-body {
+    padding: 3rem;
 }
 
 .modal.modal--gui .modal-dialog {
@@ -1406,6 +1490,9 @@ nav.navbar .dropdown-menu li {
         transform: scale(1);
     }
 }
+
+/* Loader
+   ========================================================================== */
 
 .loader,
 .loader:before,
@@ -1481,228 +1568,7 @@ nav.navbar .dropdown-menu li {
     }
 }
 
-.grey_button {
-    background-color: #ebebeb;
-    border-radius: 8px;
-    color: white;
-    border: none;
-    letter-spacing: 0.03rem;
-    font-weight: 700;
-    padding: 0.25rem;
-}
 
 * {
     box-sizing: border-box
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #ebebeb;
-    border-radius: 8px;
-    color: white;
-    border: none;
-    letter-spacing: 0.03rem;
-    font-weight: 700;
-    padding: 0.25rem;
-}
-
-
-button:hover {
-    opacity: 0.9;
-}
-
-/* Float cancel and delete buttons and add an equal width */
-.cancelbtn, .deletebtn {
-    width: 30%;
-}
-
-/* Add a color to the cancel button */
-.cancelbtn {
-    background-color: #ccc;
-    color: white;
-    margin-left: 50px;
-}
-
-/* Add a color to the delete button */
-.deletebtn {
-    background-color: #1F567D;
-    color: white;
-}
-
-/* Add padding and center-align text to the container */
-.container {
-    padding: 16px;
-    text-align: center;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: var(--bct);
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 0px solid #fff;
-    width: 40%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-    margin-bottom: 25px;
-}
-
-/* The Modal Close Button (x) */
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-    color: #1F567D;
-    cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and delete button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .deletebtn {
-        width: 100%;
-    }
-}
-
-.grey_button {
-    background-color: #ebebeb;
-    border-radius: 8px;
-    color: white;
-    border: none;
-    letter-spacing: 0.03rem;
-    font-weight: 700;
-    padding: 0.25rem;
-}
-
-* {
-    box-sizing: border-box
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #ebebeb;
-    border-radius: 8px;
-    color: white;
-    border: none;
-    letter-spacing: 0.03rem;
-    font-weight: 700;
-    padding: 0.25rem;
-}
-
-
-button:hover {
-    opacity: 0.9;
-}
-
-/* Float cancel and delete buttons and add an equal width */
-.cancelbtn, .deletebtn {
-    width: 30%;
-}
-
-/* Add a color to the cancel button */
-.cancelbtn {
-    background-color: #ccc;
-    color: white;
-    margin-left: 50px;
-}
-
-/* Add a color to the delete button */
-.deletebtn {
-    background-color: #1F567D;
-    color: white;
-}
-
-/* Add padding and center-align text to the container */
-.container {
-    padding: 16px;
-    text-align: center;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: var(--bct);
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 0px solid #fff;
-    width: 40%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-    margin-bottom: 25px;
-}
-
-/* The Modal Close Button (x) */
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-    color: #1F567D;
-    cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and delete button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .deletebtn {
-        width: 100%;
-    }
-}
-
-body {
-    text-align: justify;
 }
