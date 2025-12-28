@@ -1228,72 +1228,6 @@ div.disabled {
     vertical-align: middle;
 }
 
-
-.header-results {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 4rem;
-    margin-bottom: 1rem;
-}
-
-.header-results > div {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 82rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-}
-
-.header-results .header__title {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
-
-.header-results .header__export {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-.header-results .header__export .btn .icon {
-    font-size: 1.5rem;
-    vertical-align: middle;
-}
-
-.header-results {
-    font-weight: 300;
-    color: #343434;
-}
-
 .icon--small {
     font-size: .6rem;
 }
@@ -1419,31 +1353,11 @@ nav.navbar .dropdown-menu li {
         padding-left: 1.5rem;
     }
 
-    .navbar .nav-item.dropdown.profile a {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .navbar .nav-item.dropdown.profile a::after {
-        vertical-align: -3px;
-    }
-
-    .navbar .nav-item.dropdown.profile img {
-        height: 2rem;
-        width: 2rem;
-        transform: translateY(3px);
-        -webkit-transform: translateY(3px);
-        -moz-transform: translateY(3px);
-        -ms-transform: translateY(3px);
-        -o-transform: translateY(3px);
-    }
-
     .navbar.navbar--signup .nav-item.locale::before {
         content: '';
     }
 
 }
-
 
 .main--padding-top {
     padding-top: 7rem;
@@ -1529,10 +1443,6 @@ nav.navbar .dropdown-menu li {
 
 .btn-group .btn {
     padding: 0.2rem;
-}
-
-.import-file {
-    padding-top: .85rem;
 }
 
 @keyframes modalFadeIn {
@@ -1858,23 +1768,3 @@ hr {
 body {
     text-align: justify;
 }
-
-.image-container {
-    display: flex;
-    justify-content: space-between; /* Adjusts space between images */
-}
-
-.image-container img {
-    width: 150px; /* Adjust width as needed */
-    height: auto; /* Maintains aspect ratio */
-}
-
-.row {
-    animation: loadingEffect 1s;
-}
-
-.currency-sub {
-        font-size: 0.8em;
-        vertical-align: sub;
-        color: #555;
-    }
