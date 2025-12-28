@@ -1336,42 +1336,6 @@ div.disabled {
     padding: 3rem;
 }
 
-table.table {
-    -webkit-box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
-    box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
-    border-radius: 8px;
-}
-
-table.table thead {
-    background-color: #F4F7F9;
-}
-
-table.table thead tr {
-    text-transform: uppercase;
-}
-
-table.table thead th {
-    border-bottom: none;
-}
-
-table.table tbody td {
-    border-bottom: 1px solid #E3EAEE;
-}
-
-table.table tbody tr:last-of-type td,
-table.table tbody tr:last-of-type th {
-    border-bottom: none;
-}
-
-table.table tbody button.btn {
-    text-align: left;
-    padding: 0;
-}
-
-table.table > :not(caption) > * > * {
-    padding: .75rem;
-}
-
 nav.navbar {
     position: fixed;
     width: 100%;
@@ -2292,16 +2256,6 @@ body .navbar.navbar-expand-lg.navbar-light.bg-light.navbar--scenario {
 }
 
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    text-align: left;
-    padding: 10px;
-}
-
 .grey_button {
     background-color: #ebebeb;
     border-radius: 8px;
@@ -2417,16 +2371,6 @@ body .navbar.navbar-expand-lg.navbar-light.bg-light.navbar--scenario {
     background-color: rgba(0, 0, 0, 0.0) !important;
 }
 
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    text-align: left;
-    padding: 10px;
-}
 
 .grey_button {
     background-color: #ebebeb;
