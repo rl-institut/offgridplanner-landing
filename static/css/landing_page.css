@@ -62,6 +62,9 @@ a.btn.btn-white:hover {
   justify-content: space-between;
   position: relative; /* needed for scroll indicator arrow */
 }
+.central > div {
+  justify-content: center;
+}
 .cellular__text {
   padding-top: 7rem;
   padding-right: 7rem;
