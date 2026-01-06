@@ -319,6 +319,7 @@ ul.features-list li {
   padding-left: 24px;
   margin-bottom: 0.8rem;
   line-height: 1;
+  font-size: 1.05rem;
 }
 ul.target-group-list {
   list-style: none;
@@ -400,7 +401,7 @@ ul.target-group-list li {
 }
 #text-content1 .grid__text > div > span {
   margin-bottom: 0rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
   line-height: 1.4;
   color: var(--text-dark-color);
 } 
