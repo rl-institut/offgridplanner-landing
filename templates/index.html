@@ -67,17 +67,13 @@
 
 {% block index %}
 <div id="coming-soon-modal" class="modal">
-<div class="modal-content">
-            <button id="close-modal" type="button"
-              class="close"
-              data-bs-dismiss="modal"
-              aria-label="Close">
-      &times;</button>
-  <div class="modal-body">
-      <h3>coming soon</h3>
+  <div class="modal-content">
+    <button id="close-modal" type="button" class="close" aria-label="Close">&times;</button>
+    <div class="modal-body">
+      <h3>Coming soon</h3>
       <p>This implementation of the Offgridplanner is currently deployed for internal use only. In the future, a version allowing for exploration of the features developed within this project will be found here.</p>
+    </div>
   </div>
-</div>
 </div>
 <main class="landing-page-styles">
 	<section class="cellular section" id="hero" data-aos="fade-up">
@@ -327,19 +323,24 @@
 <script src="{{ url_for('static', filename='js/project.js') }}"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("sdlfjksdflj")
     const link = document.getElementById("mozambique-link");
     const modal = document.getElementById("coming-soon-modal");
     const closeBtn = document.getElementById("close-modal");
+    debugger;
+    if (link) {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            modal.style.display = "flex";
+        });
+    }
 
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
-        modal.style.display = "flex";
-    });
-
-    closeBtn.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
+    if (closeBtn) {
+        closeBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            modal.style.display = "none";
+        });
+    }
 
     modal.addEventListener("click", function (e) {
         if (e.target === modal) {

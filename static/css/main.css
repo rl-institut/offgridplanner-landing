@@ -1611,56 +1611,59 @@ nav.navbar .dropdown-menu li {
     text-align: center;
 }
 
-/* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 50px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
-/* Modal Content/Box */
 .modal-content {
-    background-color: var(--bct);
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 0px solid #fff;
-    width: 40%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-    margin-bottom: 25px;
-}
-
-/* The Modal Close Button (x) */
-.close {
     position: relative;
-    bottom: 0.25rem;
-    right: 0.5rem;
+    background-color: var(--bct);
+    border: 0;
+    border-radius: 8px;
+    width: min(40%, 600px);
+    min-width: 280px;
+
+    padding: 2rem;
+    box-sizing: border-box;
+
+    height: auto;
+    max-height: none;
+    overflow: visible;
+}
+
+.modal-body {
+    margin-top: 1rem;
+}
+
+.close {
     position: absolute;
     top: 10px;
     right: 15px;
     width: 32px;
     height: 32px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #f1f1f1;
     color: #1F567D;
     border: 2px solid #1F567D;
     border-radius: 4px;
     background: transparent;
     cursor: pointer;
-    display: flex;              /* centers the X */
-    align-items: center;        /* vertical centering */
-    justify-content: center;    /* horizontal centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
 }
-
 .close:hover,
 .close:focus {
     color: #1F567D;
