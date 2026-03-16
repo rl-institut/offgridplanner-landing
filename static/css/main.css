@@ -677,6 +677,7 @@ div.disabled {
     margin-top: 0.4rem;
     margin-bottom: 2rem;
 }
+
 .cellular__text span {
     display: block;
     text-align: left;
@@ -694,6 +695,78 @@ div.disabled {
 .cellular__image img {
     max-width: 33.33vw;
 }
+
+
+.about__text {
+    padding-right: 7rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    max-width: 48%;
+    color: var(--text-dark-color)
+}
+
+.about__text h2 {
+    font-size: 1.953rem;
+    font-weight: 700;
+    color: var(--h2-color);
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.standard-layout {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .standard-layout > div {
+    max-width: 50rem;
+    padding-top: 10rem; }
+    .standard-layout > div:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 10rem;
+      background-image: url("/static/assets/illustrations/computer.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+  .standard-layout--license div:before {
+    background-image: url("/static/assets/illustrations/balance.svg"); }
+  .standard-layout h2 {
+    font-size: 1.563rem; }
+  .standard-layout h3 {
+    font-size: 1.25rem; }
+  .standard-layout h4 {
+    font-size: 1rem; }
+  .standard-layout__paragraph {
+    padding-bottom: 1rem; }
+    .standard-layout__paragraph--foreground {
+      background-color: #F4F7F9;
+      background-size: cover;
+      background-position: center;
+      padding: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 4rem; }
+    .standard-layout__paragraph--small h2 {
+      font-size: 1.25rem; }
+    .standard-layout__paragraph--small p {
+      font-size: 0.875rem; }
+  .standard-layout .account {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .standard-layout .account > div {
+      max-width: 28rem;
+      width: 100%; }
+    .standard-layout .account__save {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+
   
 @media (max-width: 1200px) {
     .cellular__image img {
@@ -816,6 +889,7 @@ div.disabled {
 .footer-logo img {
     max-width: 100%;
     height: auto;
+    max-height: 48px; /* Height of the redirect button next to it */
 }
 .footer-logo:hover {
     transform: scale(1.05);
@@ -1720,3 +1794,4 @@ hr {
 * {
     box-sizing: border-box
 }
+
