@@ -76,7 +76,9 @@
 				<h3>Offgridplanner</h3>
                 <h1>Smarter Tools for Off-Grid Energy System Planning</h1>
                 <br>
-				<span>Offgridplanner is a powerful open-source tool developed by the Reiner Lemoine Institute to support the planning and optimization of off-grid electricity systems. It simulates and optimizes layouts by analyzing building and customer locations, estimating energy demand, and calculating optimal configurations for both distribution networks and energy systems</span>
+				<span>Offgridplanner is a powerful open-source tool developed by the Reiner Lemoine Institute to support the planning and optimization of off-grid electricity systems. It simulates and optimizes layouts by analyzing building and customer locations, estimating energy demand, and calculating optimal configurations for both distribution networks and energy systems.</span>
+                <br>
+                <span>Explore different implementations based on specific countries. However, the tool is designed to be used broadly and can be adapted to your needs.</span>
 			</div>
 			<div class="cellular__image">
 				<img src="{{ url_for('static', filename='assets/logos/Offgridplanner-Hero-Image.svg') }}" alt="">
@@ -87,7 +89,7 @@
 
 	<section class="regions" id="regions">
         <div>
-            <h2>Available Regions</h2>
+            <h2>Featured Implementations</h2>
             <div class="region__cards">
                 <div class="region-card">
                     <div class="card__header">
@@ -101,19 +103,19 @@
                                 Features
                             </p>
                             <ul class="features-list">
-                                <li title="Geospatial energy system optimization and design">Geospatial energy system optimization and design</li>
+                                <li title="Geospatial optimization of the distribution grid">Geospatial optimization of the distribution grid</li>
+                                <li title="Energy system optimization and design">Energy system optimization and design</li>
                                 <li title="Solar home system option">Solar home system option</li>
                             </ul>
                     </div>
                     <div class="card__content_components">
                         <p class="list-title">
-                            Components
+                            Energy System Components
                         </p>
                         <div class="components-list">
                             <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
                             <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
                             <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
-                            <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
                         </div>
                     </div>
                     <div class="card__footer">
@@ -135,7 +137,8 @@
                             Features
                         </p>
                         <ul class="features-list">
-                            <li title="Geospatial energy system optimization and design">Geospatial energy system optimization and design</li>
+                            <li title="Geospatial optimization of the distribution grid">Geospatial optimization of the distribution grid</li>
+                            <li title="Energy system optimization and design">Energy system optimization and design</li>
                             <li title="Solar home system option">Solar home system option</li>
                             <li title="Integration of hydrogen components">Integration of hydrogen components (electrolyzer, fuel cell and storage) as seasonal storage</li>
                             <li title="Grid pole modifications">Grid pole modifications along roadways or infrastructure</li>
@@ -143,21 +146,18 @@
                     </div>
                     <div class="card__content_components">
                         <p class="list-title">
-                            Components
+                            Energy System Components
                         </p>
                         <div class="components-list">
                             <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
                             <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
                             <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
                             <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir.svg') }}" title="Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
-                            <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
                         </div>
                     </div>
                     <div class="card__footer">
-                        <!--ToDo: needs the url to offgridplanner thailand website-->
-                        <a href="https://nigeria.offgridplanner.org" class="btn btn--medium"><span class="arrow-right"></span>Offgridplanner Thailand</a>
-                        <!--ToDo: needs the url and logo from project below-->
-                        <a href="https://www.peoplesun.org/" class="footer-logo" title="Visit project partner" target="_blank" rel="noopener">
+                        <a href="https://thailand.offgridplanner.org" class="btn btn--medium"><span class="arrow-right"></span>Offgridplanner Thailand</a>
+                        <a href="https://www.exportinitiative-umweltschutz.de/projekte/green-h2islands/" class="footer-logo" title="Visit project partner" target="_blank" rel="noopener">
                             <img src="{{ url_for('static', filename='assets/logos/Green-H2Islands-Full-Logo.png') }}" alt="Partner Logo">
                         </a>
                     </div>
@@ -174,27 +174,30 @@
                             Features
                         </p>
                         <ul class="features-list">
-                            <li title="Geospatial energy system optimization and design">Geospatial energy system optimization and design</li>
+                            <li title="Exploration for potential mini-grid site identification">Exploration for potential mini-grid site identification</li>
+                            <li title="Integration of monitoring API for existing mini-grids">Integration of monitoring API for existing mini-grids</li>
+                            <li title="Geospatial optimization of the distribution grid">Geospatial optimization of the distribution grid</li>
+                            <li title="Energy system optimization and design">Energy system optimization and design</li>
                             <li title="Solar home system option">Solar home system option</li>
+                            <li title="Grid pole modifications">Grid pole modifications</li>
+
                         </ul>
                     </div>
                     <div class="card__content_components">
                         <p class="list-title">
-                            Components
+                            Energy System Components
                         </p>
                         <div class="components-list">
                             <img src="{{ url_for('static', filename='assets/icons/i_pv_full.svg') }}" title="PV modules" alt="PV modules Icon" class="category-icon">
                             <img src="{{ url_for('static', filename='assets/icons/i_battery_full.svg') }}" title="Battery Storage" alt="Battery Storage Icon" class="category-icon">
                             <img src="{{ url_for('static', filename='assets/icons/i_generator_full.svg') }}" title="Diesel Generator" alt="Diesel Generator Icon" class="category-icon">
-                            <img src="{{ url_for('static', filename='assets/icons/i_h2reservoir.svg') }}" title="Hydrogen Storage" alt="Hydrogen Storage Icon" class="category-icon">
-                            <img src="{{ url_for('static', filename='assets/icons/i_inverter.svg') }}" title="Inverter" alt="Inverter Icon" class="category-icon">
                         </div>
                     </div>
                     <div class="card__footer">
-                        <!--ToDo: needs the url to offgridplanner mozambique website-->
-                        <a href="https://nigeria.offgridplanner.org" class="btn btn--medium"><span class="arrow-right"></span>Offgridplanner Mozambique</a>
-                        <!--ToDo: needs the url and logo from project below-->
-                        <a href="https://www.peoplesun.org/" class="footer-logo" title="Visit project partner" target="_blank" rel="noopener"></a>
+                        <a href="https://mozambique.offgridplanner.org" class="btn btn--medium"><span class="arrow-right"></span>Offgridplanner Mozambique</a>
+                        <a href="https://azimut360.coop/en/projectes/digital-energy-challenge-digital-tool-for-the-intelligent-design-and-operation-of-mini-grids-in-mozambique-2022/" class="footer-logo" title="Visit project partner" target="_blank" rel="noopener">
+                            <img src="{{ url_for('static', filename='assets/logos/LogoAzimut.png') }}" alt="Partner Logo">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -259,9 +262,9 @@
 	<section class="newsletter">
         <div>
             <div class="newsletter__heading">
-                <h2>Are you interested to explore other regions?</h2>
+                <h2>Interested in other applications?</h2>
             </div>
-            <span class="newsletter__text">We are happy to develop the tool further and adapt it to other regions, if you have the need for a specific country, or region, please reach out to us! <a href="mailto:offgridplanner@rl-institut.de" title="link to email to tha address offgridplanner@rl-institut.de">offgridplanner@rl-institut.de</a></span>
+            <span class="newsletter__text">We are happy to develop the tool further and adapt it to other regions. If you have the need for a specific country or new features you'd like to explore, please reach out to us at <a href="mailto:offgridplanner@rl-institut.de" title="link to email to tha address offgridplanner@rl-institut.de">offgridplanner@rl-institut.de</a>.</span>
         </div>
     </section>
 
