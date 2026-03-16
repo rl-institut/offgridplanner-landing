@@ -54,11 +54,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <!--ToDo: needs the correct url -->
                         <a class="btn btn--small btn-white" href="{{ url_for('sponsoring') }}" >Sponsoring</a>
                     </li>
                     <li class="nav-item">
-                        <!--ToDo: needs the correct url -->
                         <a class="btn btn--small btn-white" href="{{ url_for('about_us') }}" >About us</a>
                     </li>
                 </ul>
@@ -68,7 +66,19 @@
 {% endblock navbar %}
 
 {% block index %}
-
+<div id="coming-soon-modal" class="modal">
+<div class="modal-content">
+            <button id="close-modal" type="button"
+              class="close"
+              data-bs-dismiss="modal"
+              aria-label="Close">
+      &times;</button>
+  <div class="modal-body">
+      <h3>coming soon</h3>
+      <p>This implementation of the Offgridplanner is currently deployed for internal use only. In the future, a version allowing for exploration of the features developed within this project will be found here.</p>
+  </div>
+</div>
+</div>
 <main class="landing-page-styles">
 	<section class="cellular section" id="hero" data-aos="fade-up">
 		<div>
@@ -194,7 +204,8 @@
                         </div>
                     </div>
                     <div class="card__footer">
-                        <a href="https://mozambique.offgridplanner.org" class="btn btn--medium"><span class="arrow-right"></span>Offgridplanner Mozambique</a>
+                        <a id="mozambique-link" class="btn btn--medium" href="#"><span class="arrow-right"></span>Offgridplanner Mozambique</a>
+<!--                        <a id="mozambique-link" href="#" class="btn btn&#45;&#45;medium"><span class="arrow-right"></span>Offgridplanner Mozambique</a>-->
                         <a href="https://azimut360.coop/en/projectes/digital-energy-challenge-digital-tool-for-the-intelligent-design-and-operation-of-mini-grids-in-mozambique-2022/" class="footer-logo" title="Visit project partner" target="_blank" rel="noopener">
                             <img src="{{ url_for('static', filename='assets/logos/LogoAzimut.png') }}" alt="Partner Logo">
                         </a>
@@ -311,9 +322,32 @@
 </footer>
 {% endblock footer %}
 
-{% block end_body_scripts %}{% endblock %}
+{% block end_body_scripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{ url_for('static', filename='js/project.js') }}"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("sdlfjksdflj")
+    const link = document.getElementById("mozambique-link");
+    const modal = document.getElementById("coming-soon-modal");
+    const closeBtn = document.getElementById("close-modal");
 
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+        modal.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+</script>
+{% endblock %}
 </body>
 </html>
